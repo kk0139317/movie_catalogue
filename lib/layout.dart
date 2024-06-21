@@ -37,8 +37,8 @@ class _AppLayoutState extends State<AppLayout>{
             //left pane
             Container(
               width: 300,
-              child: LeftPane(mainNavAction: menuAction, selected: _currentPage,),
               color: const Color(0xFF253089).withOpacity(0.85),
+              child: LeftPane(mainNavAction: menuAction, selected: _currentPage,),
             ),
             //
             Expanded(

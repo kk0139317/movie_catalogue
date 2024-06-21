@@ -6,9 +6,9 @@ class ProfileSection extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
 
-    return Row(
-      children: const [
-        Text("Rexford Nyarko", style: TextStyle(color: Colors.white, fontSize: 18),),
+    return const Row(
+      children: [
+        Text("Redford Nark", style: TextStyle(color: Colors.white, fontSize: 18),),
         SizedBox(width: 20,),
         CircleAvatar(backgroundImage: AssetImage("assets/img/profile.thumbnail.jpeg"), radius: 35,),
         SizedBox(width: 15,),

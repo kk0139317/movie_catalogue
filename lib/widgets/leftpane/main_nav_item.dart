@@ -6,7 +6,7 @@ class MainNavItem extends StatelessWidget{
   final VoidCallback action;
   final IconData? icon;
 
-  const MainNavItem(this.title, this.icon, this.isSelected, this.action, {Key? key}) : super(key: key);
+  const MainNavItem(this.title, this.icon, this.isSelected, this.action, {super.key});
 
   @override
   Widget build(BuildContext context) {

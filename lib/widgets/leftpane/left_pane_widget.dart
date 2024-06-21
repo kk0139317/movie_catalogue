@@ -7,7 +7,7 @@ class LeftPane extends StatelessWidget{
   final int selected;
   final Function mainNavAction;
 
-  const LeftPane({Key? key, required this.selected, required this.mainNavAction}) : super(key: key);
+  const LeftPane({super.key, required this.selected, required this.mainNavAction});
 
 
   @override

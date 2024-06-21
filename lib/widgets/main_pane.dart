@@ -28,10 +28,6 @@ class MainPane extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(10),
                   child: GridTile(
-                    child: Image(
-                      image:NetworkImage(pImageBase + data[index]["poster_path"]),
-                      fit: BoxFit.fill,
-                    ),
                     footer: Container(
                       alignment: Alignment.centerRight,
                       margin: const EdgeInsets.all(12),
@@ -40,11 +36,15 @@ class MainPane extends StatelessWidget {
                         child: Container(
                           padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 3),
                           color: Colors.yellowAccent,
-                          child: Text("\u{2605} " + data[index]["vote_average"].toString(),
+                          child: Text("\u{2605} ${data[index]["vote_average"]}",
                             style: const TextStyle( fontWeight: FontWeight.bold, fontSize: 17, color: Colors.black),
                           ),
                         ),
                       ),
+                    ),
+                    child: Image(
+                      image:NetworkImage(pImageBase + data[index]["poster_path"]),
+                      fit: BoxFit.fill,
                     ),
                   ),
                 ),

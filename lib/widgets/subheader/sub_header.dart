@@ -3,11 +3,13 @@ import 'package:movie_catalogue/widgets/subheader/sort_control.dart';
 import 'package:movie_catalogue/widgets/subheader/view_control.dart';
 
 class SubHeader extends StatelessWidget{
+  const SubHeader({super.key});
+
   @override
   Widget build(BuildContext context) {
 
-    return Row(
-      children: const [
+    return const Row(
+      children: [
         SortControl(),
         ViewControls()
       ]

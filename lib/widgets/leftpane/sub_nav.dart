@@ -8,7 +8,7 @@ class SubNavItem extends StatelessWidget{
   final IconData? icon2;
   final double? textSize;
 
-  const SubNavItem(this.title, this.textSize, this.icon1,this.icon2, this.isSelected, this.action, {Key? key}) : super(key: key);
+  const SubNavItem(this.title, this.textSize, this.icon1,this.icon2, this.isSelected, this.action, {super.key});
 
   @override
   Widget build(BuildContext context) {
